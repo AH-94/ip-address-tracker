@@ -80,6 +80,34 @@ body {
     opacity: 0.5;
 }
 
+
+.address__input::-moz-placeholder {
+  color: inherit;
+}
+
+.address__input:focus::-moz-placeholder {
+  opacity: 0.5;
+}
+
+
+.address__input:-ms-input-placeholder {
+  color: inherit;
+}
+
+.address__input:focus:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.address__input:-moz-placeholder {
+  color: inherit;
+}
+
+
+.address__input:focus:-moz-placeholder {
+  opacity: 0.5;
+}
+
+
 /* submit button */
 
 .address__btn {
