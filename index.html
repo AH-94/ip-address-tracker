@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IP Address Tracker</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+  <div class="app--container">
+    <div class="form--section">
+      <h1 class="title">IP Address Tracker</h1>
+      <form id="IP__form" class="address__form" action="">
+        <input id="IP__input" class="address__input" type="text" placeholder="192.212.174.101">
+        <button id="IP__button" class="address__btn"><img src="icon-arrow.svg" width="12" height="12" alt="arrow icon"></button>
+      </form>
+      <div class="display--section">
+        <div class="result__section">
+          <h4 class="result__title">IP address</h4>
+          <span id="IP__address" class="result">192.212.174.101</span>
+        </div>
+        <div class="result__section">
+          <h4 class="result__title">Location</h4>
+          <span id="location" class="result">Brooklyn, NY, 10001</span>
+        </div>
+        <div class="result__section">
+          <h4 class="result__title">Timezone</h4>
+          <span id="timezone" class="result">UTC - 05:00</span>
+        </div>
+        <div class="result__section">
+          <h4 class="result__title">ISP</h4>
+          <span id="ISP" class="result">SpaceX Starlink</span>
+        </div>
+      </div>
+    </div>
+    <div id="display__map" class="map__container"></div>
+  </div>
+</body>
+</html>
