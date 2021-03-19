@@ -26,7 +26,7 @@ body {
 
 .form--section {
     position: relative;
-    min-height: 35vh;
+    min-height: 350px;
     background: url('pattern-bg.png') no-repeat 100% 100% / cover;
     text-align: center;
     padding-top: 1.5em;
